@@ -33,9 +33,7 @@ export const TaskDataProvider: FC<ITaskDataProvider> = ({ children }) => {
     deleteCompletedTasks,
     deleteTask,
   } = useGetTask();
-  const [typeFilter, setTypeFilter] = useState<"all" | "active" | "completed">(
-    "all"
-  );
+  const [typeFilter, setTypeFilter] = useState<TypeFilter>("all");
 
   return (
     <TasksContext.Provider

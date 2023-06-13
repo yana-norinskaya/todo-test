@@ -17,13 +17,6 @@ export const Body: FC = () => {
       return tasks;
     }
   }, [tasks, typeFilter]);
-  const transformValue = useCallback((value: string) => {
-    if (value.length > 30) {
-      return value.substring(0, 30) + "...";
-    } else {
-      return value;
-    }
-  }, []);
 
   return (
     <ul className={styles.content}>
@@ -42,7 +35,7 @@ export const Body: FC = () => {
               <img data-testid="done" src={done} alt="done" />
             )}
           </div>
-          <p> {transformValue(task.value)}</p>
+          <p className={styles.task_value}> {task.value}</p>
 
           <img
             onClick={() => deleteTask(task.id)}

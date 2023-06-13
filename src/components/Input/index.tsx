@@ -7,7 +7,7 @@ export const Input: FC = () => {
   const [value, setValue] = useState("");
 
   const keydown = (e: any) => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && value) {
       handleSubmit(value);
       setValue("");
     }

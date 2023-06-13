@@ -1,43 +1,98 @@
-.footer {
-  width: 100%;
-  background: rgb(6, 22, 232);
-  background: linear-gradient(
-    90deg,
-    rgba(6, 22, 232, 0.953676538974965) 0%,
-    rgba(56, 92, 166, 1) 0%,
-    rgba(28, 89, 140, 1) 100%,
-    rgba(148, 0, 240, 1) 100%
-  );
-  display: flex;
-  color: aliceblue;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-
-  .btn {
-    height: 100%;
-    background: transparent;
-    padding: 1rem;
-    cursor: pointer;
+@media (min-width: 481px) {
+  .footer {
+    width: 100%;
+    background: rgb(6, 22, 232);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 22, 232, 0.953676538974965) 0%,
+      rgba(56, 92, 166, 1) 0%,
+      rgba(28, 89, 140, 1) 100%,
+      rgba(148, 0, 240, 1) 100%
+    );
+    display: flex;
     color: aliceblue;
-    transition: all 0.3s ease-in-out;
-    &:hover {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      width: 85px;
+      height: 100%;
+      background: transparent;
+      cursor: pointer;
+      color: aliceblue;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: rgb(135, 11, 167);
+      }
+    }
+    .btn_active {
       background: rgb(135, 11, 167);
     }
+    .text {
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+      width: 70px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    div:last-child {
+      button {
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
-  .btn_active {
-    background: rgb(135, 11, 167);
-  }
-  .text {
+}
+@media screen and (max-device-width: 480px) {
+  .footer {
+    width: 100%;
+    background: rgb(6, 22, 232);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 22, 232, 0.953676538974965) 0%,
+      rgba(56, 92, 166, 1) 0%,
+      rgba(28, 89, 140, 1) 100%,
+      rgba(148, 0, 240, 1) 100%
+    );
     display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    width: 70px;
-    font-weight: bold;
-  }
-  div:last-child {
-    button {
-      border-radius: 0 20px 20px 0;
+    color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      height: 100%;
+      background: transparent;
+      width: 60px;
+      cursor: pointer;
+      color: aliceblue;
+      transition: all 0.3s ease-in-out;
+      font-size: 10px;
+      border-radius: 10px;
+      &:hover {
+        background: rgb(135, 11, 167);
+      }
+    }
+    .btn_active {
+      background: rgb(135, 11, 167);
+    }
+    .text {
+      display: flex;
+      align-items: center;
+
+      padding-left: 1rem;
+      width: 70px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    div:last-child {
+      button {
+        border-radius: 0 20px 20px 0;
+      }
     }
   }
 }

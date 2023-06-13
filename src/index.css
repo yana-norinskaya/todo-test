@@ -1,14 +1,16 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(0, 87, 232);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 87, 232, 1) 0%,
-    rgba(90, 195, 245, 0.9585084033613446) 60%
-  );
-  height: 100vh;
+@media (min-width: 481px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 87, 232);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 87, 232, 1) 0%,
+      rgba(90, 195, 245, 0.9585084033613446) 60%
+    );
+    height: 100vh;
+  }
 }
 * {
   margin: 0;

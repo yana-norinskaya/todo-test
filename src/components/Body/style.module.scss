@@ -26,37 +26,40 @@
   color: aliceblue;
   font-size: 1.2rem;
   display: grid;
-  grid-template-columns: 40px auto 40px;
+  grid-template-columns: 40px 70% 40px;
   align-items: center;
   gap: 10px;
-}
-.task_completed {
-  text-decoration: line-through;
-  color: rgb(192, 202, 231);
-}
-.checkbox {
-  width: 25px;
-  height: 25px;
-  background-color: aliceblue;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  img {
+  .task_value {
+    word-wrap: break-word;
+    display: inline-block;
+  }
+  .task_completed {
+    text-decoration: line-through;
+    color: rgb(192, 202, 231);
+  }
+  .checkbox {
     width: 25px;
     height: 25px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 25px;
+      height: 25px;
+    }
   }
-}
-.delete {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  align-self: flex-end;
-  justify-self: right;
-  &:hover {
-    transform: scale(1.1);
+  .delete {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-self: right;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
