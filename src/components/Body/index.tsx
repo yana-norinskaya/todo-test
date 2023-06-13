@@ -35,7 +35,14 @@ export const Body: FC = () => {
               <img data-testid="done" src={done} alt="done" />
             )}
           </div>
-          <p className={styles.task_value}> {task.value}</p>
+          <p
+            className={
+              task.isCompleted ? styles.task_completed : styles.task_value
+            }
+          >
+            {" "}
+            {task.value}
+          </p>
 
           <img
             onClick={() => deleteTask(task.id)}
