@@ -1,0 +1,62 @@
+.content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 43, 129);
+    border-radius: 20px;
+    border: 3px solid rgb(60, 60, 167);
+  }
+}
+
+.task {
+  width: 100%;
+  background: rgb(198, 39, 212);
+  padding: 1rem;
+  border-radius: 20px;
+  color: aliceblue;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  align-items: center;
+  gap: 10px;
+}
+.task_completed {
+  text-decoration: line-through;
+  color: rgb(192, 202, 231);
+}
+.checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+.delete {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-self: flex-end;
+  justify-self: right;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
